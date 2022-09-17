@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Chat</title>
+    <style type="text/css">
+        input{
+            margin-top: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 100vh" class="d-flex justify-content-center align-items-center">
+        <form method="POST" action="{% url 'room' %}">
+            {% csrf_token %}
+            <input placeholder="Enter Room No." class="form-control" type="text" name="room_no">
+            <input placeholder="Enter Name" class="form-control" type="text" name="name">
+            <div class="d-flex justify-content-center align-items-center">
+                <input value="Enter Room" class="btn btn-primary" type="submit" name="">
+            </div>
+        </form>
+    </div>    
+</body>
+</html>
