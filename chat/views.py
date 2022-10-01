@@ -20,3 +20,7 @@ def mul(a,b):
 def div(a,b):
     d = a//b
     return d
+
+def add(a, b):
+    sum = a + b
+    return sum
