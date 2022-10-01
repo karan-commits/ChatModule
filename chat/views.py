@@ -12,3 +12,7 @@ def roomview(request):
     for eachobj in ChatModel.objects.filter(room_no=room_no):
         messages.append(eachobj.message)
     return render(request, 'room.html', {'room_no': room_no, 'name': name, 'messages': messages})
+
+def mul(a,b):
+    m = a*b
+    return m
