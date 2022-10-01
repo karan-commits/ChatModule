@@ -24,3 +24,7 @@ def div(a,b):
 def add(a, b):
     sum = a + b
     return sum
+
+def sub(a,b):
+    s = a-b
+    retunr s
